@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    double a, b, c;
+   printf("Enter a:");
+    scanf("%lf", &a);
+    printf("Enter b:");
+    scanf("%lf", &b);
+    printf("Enter c:");
+    scanf("%lf", &c);
+    
+    if (a == b || a == c || b == c){
+    printf("There is a pair of equal numbers ");
+    
+    }
+    else {
+    printf("There are no equal pairs of numbers ");
+    
+
+}
+    return 0;
+}
