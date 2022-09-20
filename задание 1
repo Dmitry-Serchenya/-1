@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+   double a,x1,y1,x2,y2;
+   printf("Enter x1:");
+  scanf("%lf",&x1);
+  printf("Enter y1:");
+    scanf("%lf",&y1);
+    printf("Enter x2:");
+    scanf("%lf",&x2);
+    printf("Enter y2:");
+        scanf("%lf",&y2);
+    a=sqrt(pow((x1-x2),2)+pow((y1-y2),2));
+   printf("The distance between the points is "); 
+ printf("%.2lf\n",a);         
+
+ 
+    return 0;
+}
