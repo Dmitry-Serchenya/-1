@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+   int x = 0;
+   int fib = 1;
+   int N, F, K;
+   printf("Input number N - ");
+   scanf("%d", &N);
+   for(int i = 1; i < N +1; i++)
+   {
+      if( i == x + fib) 
+      {
+          F = fib;
+          x = fib;
+          fib = i;
+          K = fib + x;
+      }
+   }
+   if(N == fib)
+   {
+       printf("N number is fibonacci number\n");
+       printf("previous fibonacci number = %d", F);
+       printf("\nNext Fibonacci number = %d", K);
+       
+   }
+   else 
+   {
+       printf("number n is not a fibonacci number");
+   }
+
+    return 0;
+}
