@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int i, j, MIN ,NUMBER, MAX;
+    MIN = 10;
+    MAX = 99;
+    NUMBER = 27;
+    for (i = MIN, j = MIN + NUMBER; i < MAX; ++i, ++j)
+        if (i / 10 % 10 + i % 10 == 11 && i / 10 % 10 == j % 10 && i % 10 == j / 10 % 10)
+            printf("\n%d => %d", i, j);
+
+   
+    return 0;
+}
